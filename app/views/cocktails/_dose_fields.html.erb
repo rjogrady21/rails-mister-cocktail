@@ -1,4 +1,4 @@
 <div class="form-inline">
-<%= f.input :ingredient_id, collection: Ingredient.all %>
-<%= f.input :description %>
+<%= f.input :ingredient_id, collection: Ingredient.all.order("name asc"), input_html: {class: 'label-margin'}, label_html: { class: 'form-box' } %>
+<%= f.input :description, label_html: { class: 'form-box' }, input_html: {class: 'label-margin'} %>
 </div>

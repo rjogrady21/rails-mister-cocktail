@@ -1,0 +1,30 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 200px;
+  padding: 50px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #FCFCFC;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px #FCFCFC;
+  align-items: center;
+}
+
+#cocktail-photo {
+  flex: 1 0 15%;
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+.text-container {
+  flex: 2;
+  .buttons {
+    margin-top: 30px;
+  }
+  vertical-align: middle;
+}
+
