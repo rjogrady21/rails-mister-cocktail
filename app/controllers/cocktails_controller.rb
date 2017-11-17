@@ -12,6 +12,7 @@ class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.all
+    @random = Cocktail.order('RANDOM()').limit(1).first
   end
 
   def show
