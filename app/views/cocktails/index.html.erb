@@ -1,7 +1,7 @@
 <%= render 'banner' %>
 <div class="container text-center">
   <h1>Cocktails</h1>
-  <% if @cocktails %>
+  <% if @cocktails.any? %>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-4">
