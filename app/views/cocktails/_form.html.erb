@@ -9,6 +9,8 @@
     </div>
   <% end %>
   <%= f.input :name, label: 'Cocktail Name', placeholder: 'Margarita' %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
   <h3>Add a dose below</h3>
   <div id="doses">
     <%=  f.simple_fields_for :doses do |dose|%>

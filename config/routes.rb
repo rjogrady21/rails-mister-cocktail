@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'ingredients/index'
 
-  resources :cocktails, only: [:create, :new, :show, :index, :edit, :update] do
+  resources :cocktails do
     resources :doses, only: [:new, :create, :show]
   end
   resources :doses, only: [:destroy]
