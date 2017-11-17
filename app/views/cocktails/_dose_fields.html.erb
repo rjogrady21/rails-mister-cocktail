@@ -1,2 +1,4 @@
-<%= f.input :ingredient_id, collection: @ingredients %>
+<div class="form-inline">
+<%= f.input :ingredient_id, collection: Ingredient.all %>
 <%= f.input :description %>
+</div>
